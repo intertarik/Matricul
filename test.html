@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<style>
+		body{
+			font-family: arial;
+			background:url(http://farm3.staticflickr.com/2866/9726346115_65903826c0_b.jpg);
+
+		}
+		.main{
+			margin: auto;
+		}
+
+		</style>
+ 
+</head>
+
+
+<body>
+<div class="main">
+  <div id="someDiv">
+    
+  </div>
+
+  <br><br>
+
+  <input id="someInput" type="text" value="entrer le matricule">
+  <input type="button" value="Go" onClick="doStuff()">
+</div>
+  </body>
+   <script>
+
+      function doStuff()
+      {
+        var nameElement = document.getElementById("someInput");
+        var MatriculeNum = nameElement.value;
+        var a=0;
+	    switch(MatriculeNum){
+			case '1':
+				a =("rabat");
+				break;
+			case '2':
+				a =("Salé-madina");
+				break;
+			case '3':
+				a =("sala el jadida");
+				break;
+			case '4':
+				a =("skhirat tmara");
+				break;
+			case '5':
+				a =("khemisset");
+				break;
+			case '6':
+				a =("casablanca anfa");
+				break;
+			case '7':
+				a =("Hay mohamadi ain sbaa");
+				break;
+			case '8':
+				a =("hay hassana ain chock");
+				break;
+			case '9':
+				a =("benmssik mediouna");
+				break;
+			case '10':
+				a =("Moulay rchid sidi outhman");
+				break;
+			case '11':
+				a =("al fida derb soultan");
+				break;
+			} 
+		
+		document.getElementById('someDiv').innerHTML = a ;
+        
+      }
+
+  </script>   
+
+</html>
